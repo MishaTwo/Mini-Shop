@@ -10,7 +10,7 @@ Home
 
 
 {% block content %}
-    <!-- {% with msgs = get_flashed_messages(with_categories=True) %}
+    {% with msgs = get_flashed_messages(with_categories=True) %}
         {% for category, message in msgs %}
             {% if category == 'error' %}
                 <div class="flash-error">
@@ -74,5 +74,5 @@ Home
   </div>
  </a>
  {% endfor %}
- </div> -->
+ </div>
 {% endblock %}
