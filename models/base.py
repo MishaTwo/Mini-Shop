@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 
-ENGINE = create_engine(os.getenv("DATABASE"), connect_args={'check_same_thread': False})
+ENGINE = create_engine(os.getenv("DATABASE_URL"), connect_args={'check_same_thread': False})
 SESSION = sessionmaker(bind=ENGINE)
 session = SESSION()
 BASE = declarative_base()
